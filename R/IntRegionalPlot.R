@@ -59,7 +59,7 @@ IntRegionalPlot <- function(chr, left, right, gtf, association, hapmap, hapmap_l
     transcript_association <- transcript_association[order(transcript_association$Site), 
         ]
     if (dim(transcript_association)[1] == 0) {
-        stop("no association obseved")
+        stop("no association observed")
     } else {
         R2 <- Site <- Site2 <- V4 <- V5 <- V9 <- group <- p <- NULL
         x <- xend <- y <- yend <- aggregate <- NULL
